@@ -28,25 +28,28 @@ class pet {
     public get idade(): number {
         return this._idade
     } public set idade(value: number) {
-        this._idade
+        this._idade = value
     }
 
     public get peso(): number {
         return this._peso
     } public set peso(value: number) {
-        this._peso
+        this._peso = value
     }
 
     public get vacina(): boolean {
         return this._vacina
     } public set vacina(value: boolean) {
-        this._vacina
+        this._vacina = value
     }
 
     public visualizar(): void {
         console.log(`\nDados do seu Pet: \nEspecie: ${this._especie} \nNome: ${this._nome} \nIdade: ${this._idade} \nPeso: ${this._peso} \nVacinado: ${this._vacina}`)
-        // console.log("   Numero da Conta: " + this._numero);
     }
 }
- const myPet = new pet("Canina", "Pingo", 6, 11, true)
- myPet.visualizar()
+
+const myPet = new pet("Canina", "Pingo", 6, 11, true)
+myPet.visualizar()
+
+const myPet2 = new pet("Canina", "Luke", 9, 20, true)
+myPet2.visualizar()
