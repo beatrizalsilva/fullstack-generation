@@ -9,7 +9,6 @@ create table tb_colaborador (
     salario decimal(10, 2) not null,
     primary key(id)
 );
-    
 
 insert into tb_colaborador(nome, cargo, departamento, salario) values("João da Silva", "Analista de RH", "Recursos Humanos", 2200.00);
 insert into tb_colaborador(nome, cargo, departamento, salario) values("Pedro Almeida", "Gerente de Vendas", "Vendas", 3000.00);

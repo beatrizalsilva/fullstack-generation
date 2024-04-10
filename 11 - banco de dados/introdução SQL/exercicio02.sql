@@ -18,7 +18,6 @@ insert into tb_produto(titulo, autor, editora, preco) values("Código Limpo", "R
 ("Box: Harry Potter Premium", "J.K. Rowling", "Rocco", 512.89),
 ("Box: Demon Slayer", "Koyoharu Gotouge", "Panini", 600.31),
 ("Box: Brotherband", "John Flanagan", "Fundamento", 516.23);
-
     
 select * from tb_produto where preco > 500.00;
 select * from tb_produto where preco < 500.00;
