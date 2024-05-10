@@ -1,0 +1,21 @@
+.atividades {
+    display: flex;
+    justify-content: center;
+    gap: 27px;
+}
+
+img {
+    width: 47%;
+    height: auto;
+    border-radius: 5px;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+h1 {
+    text-align: center;
+}

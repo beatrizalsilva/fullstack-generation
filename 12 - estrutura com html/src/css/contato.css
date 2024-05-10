@@ -1,0 +1,55 @@
+main {
+    margin: auto 0;
+    height: 100vh;
+}
+
+.contato {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px;
+    gap: 20px;
+}
+
+div {
+    max-width: 550px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    
+
+    height: 400px;
+    width: 500px;
+
+    background-color: #DDE5B6;
+    border-radius: 8px;
+}
+
+label {
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    background-color: #ADC178;
+    padding: 12px 20px;
+    margin-top: 20px;
+
+    font-size: 15px;
+
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer;
+}
+
+button:hover {
+    color: #FFFFFF;
+}
