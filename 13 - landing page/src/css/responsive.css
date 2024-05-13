@@ -1,0 +1,52 @@
+/* Estilos para telas menores que 768px (tablets) */
+@media (max-width: 768px) {
+    header {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    header nav ul {
+      flex-direction: column; 
+      align-items: center;
+    }
+  
+    main section {
+      flex-direction: column; /* Seções em coluna */
+    }
+  
+    .info-home, .info-sobre, .info-contato {
+      text-align: center; /* Centraliza o texto das seções informativas */
+    }
+  
+    .home, .sobre {
+      width: 90%; /* Ajusta a largura das imagens */
+      margin: 20px auto; /* Centraliza as imagens com margem automática */
+    }
+  
+    .info-contato {
+      width: 90%;
+    }
+  
+    form {
+      width: 90%;
+    }
+  
+    .github {
+      flex-direction: column;
+    }
+  
+    .github button {
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* Estilos para telas menores que 480px (smartphones) */
+  @media (max-width: 480px) {
+    .info-home h1 {
+      font-size: 28px;
+    }
+  
+    .social {
+      font-size: 28px; /* Diminui o tamanho dos ícones sociais */
+    }
+}
