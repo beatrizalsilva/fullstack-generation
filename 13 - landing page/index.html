@@ -4,60 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universe</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <header>
+        <span class="logo">Universe</span>
         <nav>
-            <span class="logo">Universe</span>
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section>
-            <p>Bem-Vindos a um Novo Universo</p>
-            <h1>Diferentes Mundos para Diferentes Pessoas</h1>
-            <p>Seja bem-vindo(a) a um lugar onde cada passo é uma jornada única, onde diferentes mundos se entrelaçam para atender às suas mais profundas aspirações. Este é o seu convite para explorar, crescer e se surpreender em um novo universo de oportunidades e experiências.</p>
-            <button>Explore</button>
+            <div class="info-home">
+                <p class="chamada">Bem-Vindos a um Novo Universo</p>
+                <h1>Diferentes mundos para <br> diferentes pessoas</h1>
+                <p>Seja bem-vindo(a) a um lugar onde cada passo é uma jornada única, onde diferentes mundos se entrelaçam para atender às suas mais profundas aspirações. Este é o seu convite para explorar, crescer e se surpreender em um novo universo de oportunidades e experiências.</p>
+                <button>Explore</button>
+            </div>
 
-            <img src="src/imagens/astronauta.svg" alt="Imagem animada de uma capacete espacial. A imagem transmite a sensação de exploração e aventura no espaço.">
+            <img src="src/imagens/astronauta.svg" alt="Imagem animada de uma capacete espacial. A imagem transmite a sensação de exploração e aventura no espaço." class="home">
         </section>
 
         <section>
-            <img src="https://avatars.githubusercontent.com/u/146834458?v=4" alt="Foto de perfil de uma mulher com cabelos médio castanho, usando óculos com armação preta, blusa preta e sorrindo. O fundo é neutro, destacando bem o rosto da pessoa.">
+            <img src="https://avatars.githubusercontent.com/u/146834458?v=4" alt="Foto de perfil de uma mulher com cabelos médio castanho, usando óculos com armação preta, blusa preta e sorrindo. O fundo é neutro, destacando bem o rosto da pessoa." class="sobre">
 
-            <h2>Quem sou eu?</h2>
-            <p>Olá, sou a Beatriz! Sou apaixonada por animes, livros, games, música e tecnologia. Aqui, compartilho meu conhecimento nesse vasto universo tecnológico, onde espero que possamos evoluir juntos! Estou em busca de uma oportunidade na área de desenvolvimento, ansiosa para aplicar meu conhecimento e contribuir em projetos que promovam praticidade, segurança e inovação tecnológica. Meu objetivo é impactar positivamente na vida das pessoas, criando soluções que facilitem o dia a dia e impulsionem a sociedade para o futuro. Junte-se a mim nessa jornada de aprendizado e inovação, onde cada linha de código pode fazer a diferença!</p>
-            <button>GitHub</button>
-            <p>Seguidores</p>
-            <p>Repositórios</p>
+            <div class="info-sobre">
+                <h2>Quem sou eu?</h2>
+                <p>Olá, sou a Beatriz! Sou apaixonada por animes, livros, games, música e tecnologia. Aqui, compartilho meu conhecimento nesse vasto universo tecnológico, onde espero que possamos evoluir juntos! Estou em busca de uma oportunidade na área de desenvolvimento, ansiosa para aplicar meu conhecimento e contribuir em projetos que promovam praticidade, segurança e inovação tecnológica. Meu objetivo é impactar positivamente na vida das pessoas, criando soluções que facilitem o dia a dia e impulsionem a sociedade para o futuro. <br> Junte-se a mim nessa jornada de aprendizado e inovação, onde cada linha de código pode fazer a diferença!</p>
+
+                <div class="github">
+                    <button><a href="https://github.com/beatrizalsilva" target="_blank">GitHub</a></button>
+                    <p>Seguidores</p>
+                    <p>Repositórios</p>
+                </div>
+            </div>
         </section>
 
         <section>
-            <h2>Entre em Contato Comigo!</h2>
-            <p>Quer conversar sobre tecnologia, compartilhar ideias ou apenas trocar experiências? Preencha o formulário abaixo e me envie uma mensagem. Estou ansiosa para ouvir de você!</p>
-            <ul class="social">
-                <li><a href="" target="_blank"></a><img src="src/imagens/linkedin.svg" alt="Logo do LinkedIn."></a></li>
-                <li><a href="" target="_blank"></a><img src="src/imagens/github.svg" alt="Logo do GitHub."></a></li>
-            </ul>
+            <div class="info-contato">
+                <h2>Entre em Contato Comigo!</h2>
+                <p>Quer conversar sobre tecnologia, compartilhar ideias ou apenas trocar experiências? Preencha o formulário abaixo e me envie uma mensagem. Estou ansiosa para ouvir de você!</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/beatrizalsilva/" target="_blank"><ion-icon name="logo-linkedin" class="social"></ion-icon></a></li>
+                    <li><a href="https://github.com/beatrizalsilva" target="_blank"><ion-icon name="logo-github" class="social"></ion-icon></a></li>
+                </ul>
+            </div>
 
             <form>
                 <label>Nome:</label>
-                <input type="text">
+                <input type="text" required>
 
                 <label>Email:</label>
-                <input type="email">
+                <input type="email" required>
 
                 <label>Assunto:</label>
-                <input type="text">
+                <input type="text" required>
 
                 <label>Mensagem:</label>
-                <input type="text">
-                <button type="submit"></button>
+                <textarea rows="3" required></textarea>
+                <button type="submit">Enviar</button>
             </form>
         </section>
     </main>
