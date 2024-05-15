@@ -18,14 +18,14 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
+        <section id="home">
             <div class="info-home">
                 <p class="chamada">Bem-Vindos a um Novo Universo</p>
                 <h1>Diferentes mundos para <br> diferentes pessoas</h1>
@@ -36,22 +36,9 @@
             <img src="src/imagens/astronauta.svg" alt="Imagem animada de uma capacete espacial. A imagem transmite a sensação de exploração e aventura no espaço." class="home">
         </section>
 
-        <section>
-            <img src="https://avatars.githubusercontent.com/u/146834458?v=4" alt="Foto de perfil de uma mulher com cabelos médio castanho, usando óculos com armação preta, blusa preta e sorrindo. O fundo é neutro, destacando bem o rosto da pessoa." class="sobre">
+        <section id="sobre"></section>
 
-            <div class="info-sobre">
-                <h2>Quem sou eu?</h2>
-                <p>Olá, sou a Beatriz! Sou apaixonada por animes, livros, games, música e tecnologia. Aqui, compartilho meu conhecimento nesse vasto universo tecnológico, onde espero que possamos evoluir juntos! Estou em busca de uma oportunidade na área de desenvolvimento, ansiosa para aplicar meu conhecimento e contribuir em projetos que promovam praticidade, segurança e inovação tecnológica. Meu objetivo é impactar positivamente na vida das pessoas, criando soluções que facilitem o dia a dia e impulsionem a sociedade para o futuro. <br> Junte-se a mim nessa jornada de aprendizado e inovação, onde cada linha de código pode fazer a diferença!</p>
-
-                <div class="github">
-                    <button><a href="https://github.com/beatrizalsilva" target="_blank">GitHub</a></button>
-                    <p>Seguidores</p>
-                    <p>Repositórios</p>
-                </div>
-            </div>
-        </section>
-
-        <section>
+        <section id="contato">
             <div class="info-contato">
                 <h2>Entre em Contato Comigo!</h2>
                 <p>Quer conversar sobre tecnologia, compartilhar ideias ou apenas trocar experiências? Preencha o formulário abaixo e me envie uma mensagem. Estou ansiosa para ouvir de você!</p>
@@ -81,5 +68,7 @@
     <footer>
         <p>Feito com &#129392 por Beatriz Silva - 2024</p>
     </footer>
+
+    <script type="module" src="src/javascript/script.js"></script>
 </body>
 </html>

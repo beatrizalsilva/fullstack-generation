@@ -115,7 +115,7 @@ h2 {
     gap: 54px;
 }
 
-.github button {
+.github a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -131,7 +131,7 @@ h2 {
     border: none;
 }
 
-.github button:hover {
+.github a:hover {
     background-color: #7D6EA1;
     cursor: pointer;
 }
